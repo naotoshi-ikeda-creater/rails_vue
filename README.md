@@ -55,6 +55,7 @@ Vue CLI v4.2.3
 ? Pick the package manager to use when installing dependencies: NPM
 ```
 
+Feel free to use Nuxt.js
 ```sh
 # if you want to initialize app with nuxt.js, then execute this command.
 $ docker-compose run --rm --no-deps frontend npx create-nuxt-app  .
