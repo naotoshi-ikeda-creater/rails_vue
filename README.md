@@ -26,20 +26,6 @@ default: &default
   username: root
   password: password
   host: mysql
-
-development:
-  <<: *default
-  database: hippy_development
-
-test:
-  <<: *default
-  database: hippy_test
-
-production:
-  <<: *default
-  database: hippy_production
-  username: hippy
-  password: <%= ENV['HIPPY_DATABASE_PASSWORD'] %>
 ```
 
 #### frontend

@@ -9,12 +9,12 @@ RUN apt-get update -qq && \
     apt-get install -y build-essential \
                        libpq-dev \
                        nodejs
-RUN mkdir /hippy
-WORKDIR /hippy
-COPY Gemfile /hippy/Gemfile
-COPY Gemfile.lock /hippy/Gemfile.lock
+RUN mkdir /app_name
+WORKDIR /app_name
+COPY Gemfile /app_name/Gemfile
+COPY Gemfile.lock /app_name/Gemfile.lock
 RUN bundle install -j4
-COPY . /hippy
+COPY . /app_name
 
 # Add a script to be executed every time the container starts.
 COPY entrypoint.sh /usr/bin/

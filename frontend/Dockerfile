@@ -1,6 +1,6 @@
 FROM node:12.9.0-alpine
 
-ENV APP_HOME /hippy
+ENV APP_HOME /app_name
 ENV PATH ${APP_HOME}/node_modules/.bin:$PATH
 ENV TZ Asia/Tokyo
 
