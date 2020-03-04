@@ -10,7 +10,7 @@ Make sure you are on the root directory.
 
 ```sh
 # You can change the name of your local directory.
-$ mv boiler-rails-vue-docker newName
+$ cd .. && mv boiler-rails-vue-docker newName
 
 # then initialize.
 $ docker-compose run --rm --no-deps backend rails new . --api -T -d mysql -f --skip-bundle
