@@ -34,7 +34,7 @@ Next, create frontend app (Vue).
 Make sure you are on the root directory.
 
 ```sh
-# initialize.
+# initialize(@vue/cli).
 $ docker-compose run --rm --no-deps frontend vue create .
 
 # you will get tons of questions about the project.
@@ -53,6 +53,11 @@ Vue CLI v4.2.3
 ? Where do you prefer placing config for Babel, ESLint, etc.? In dedicated config files
 ? Save this as a preset for future projects? No
 ? Pick the package manager to use when installing dependencies: NPM
+```
+
+```sh
+# if you want to initialize app with nuxt.js, then execute this command.
+$ docker-compose run --rm --no-deps frontend npx create-nuxt-app  .
 ```
 
 #### build
