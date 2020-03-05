@@ -10,9 +10,9 @@ ENV PORT 8080
 WORKDIR ${APP_HOME}
 
 RUN apk update && \
-    apk upgrade &&\
-    npm install -g npm && \
-    npm install -g @vue/cli
+    apk upgrade && \
+    npm install -g @vue/cli && \
+    npm install -g create-nuxt-app
 
 # install dependencies in package.json
 RUN npm install
