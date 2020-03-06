@@ -6,7 +6,7 @@ import store from "./store";
 import Vuetify from "vuetify";
 import { sync } from "vuex-router-sync";
 import "vuetify/dist/vuetify.min.css";
-// import "material-design-icons-iconfont/dist/material-design-icons.css";
+import "material-design-icons-iconfont/dist/material-design-icons.css";
 
 Vue.use(VueRouter);
 Vue.use(Vuetify); // 追加
